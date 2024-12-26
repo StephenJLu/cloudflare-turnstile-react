@@ -45,6 +45,7 @@ export const TurnstileTest = () => {
         <Turnstile
           theme="dark"          
           style={{ marginBottom: '1rem' }}
+          success={status === 'success'}
         />
         <button 
           type="submit"
