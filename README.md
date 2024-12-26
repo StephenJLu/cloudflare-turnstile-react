@@ -1,5 +1,6 @@
 # Cloudflare Turnstile Implementation with React and Cloudflare Worker
 - 📖 [Full Documentation](https://docs.stephenjlu.com/cloudflare-turnstile/how-to-implement-cloudflares-turnstile)
+- ⚡ [Live Test Demo](https://www.stephenjlu.com/test)
 
 ## Test Installation
 
