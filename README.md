@@ -1,21 +1,20 @@
-# Welcome to Remix!
+# Cloudflare Turnstile Implementation with React and Cloudflare Worker
+- 📖 [Full Documentation](https://docs.stephenjlu.com/cloudflare-turnstile/how-to-implement-cloudflares-turnstile)
 
-- 📖 [Remix docs](https://remix.run/docs)
+## Test Installation
 
-## Development
-
-Run the dev server:
+Install dependencies:
 
 ```shellscript
-npm run dev
+npm install
 ```
 
 ## Deployment
 
-First, build your app for production:
+Local Dev:
 
 ```sh
-npm run build
+npm run dev
 ```
 
 Then run the app in production mode:
@@ -24,7 +23,11 @@ Then run the app in production mode:
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
+Production build for deployment:
+
+```sh
+npm run build
+```
 
 ### DIY
 
@@ -34,7 +37,3 @@ Make sure to deploy the output of `npm run build`
 
 - `build/server`
 - `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
