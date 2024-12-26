@@ -1,3 +1,4 @@
 {
-  "cft_public_key": "ENTER_PUBLIC_KEY"
+  "cft_public_key": "ENTER_PUBLIC_KEY",
+  "worker_url": "ENTER_WORKER_URL"
 }
