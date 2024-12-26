@@ -16,7 +16,7 @@ export async function verifyTurnstileToken(token: string): Promise<TurnstileResp
   try {
     
     /* Worker URL for Turnstile verification */
-    const workerUrl = 'https://turnstile.stephenjlu.com';
+    const workerUrl = 'INSERT_WORKER_URL_HERE';
 
     const verificationResponse = await fetch(workerUrl, {
       method: 'POST',
