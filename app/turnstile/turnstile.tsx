@@ -3,7 +3,6 @@ import keys from './keys.json';
 
 declare global {
   interface Window {
-
   /* 
   Possible Turnstile functions, per Cloudflare documentation
   */ 
@@ -15,11 +14,13 @@ declare global {
 }
 }
 
+type TurnstileTheme = 'light' | 'dark' | 'auto';
+
 interface TurnstileProps {  
   className?: string;
   onWidgetId?: (id: string) => void;
   success?: boolean;
-  theme?: string;  
+  theme?: TurnstileTheme;  
   [key: string]: unknown; // Allow additional props
 }
 
