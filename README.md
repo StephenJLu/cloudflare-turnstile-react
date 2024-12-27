@@ -1,5 +1,5 @@
 # Cloudflare Turnstile Implementation with React and Cloudflare Worker
-- 📖 [Full Documentation](https://docs.stephenjlu.com/cloudflare-turnstile/how-to-implement-cloudflares-turnstile)
+- 📖 [Full Documentation](https://docs.stephenjlu.com/docs-stephenjlu/how-to-implement-cloudflares-turnstile)
 - ⚡ [Live Test Demo](https://www.stephenjlu.com/test)
 - 📝 [Blog Post](https://ledger.stephenjlu.com/how-i-made-a-contact-form-bot-killer-using-cloudflare-turnstile-captcha-challenge-plus-a-bonus-honeypot?showSharer=true)
 
