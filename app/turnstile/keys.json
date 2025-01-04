@@ -1,4 +1,5 @@
 {
-  "cft_public_key": "ENTER_PUBLIC_KEY",
-  "worker_url": "ENTER_WORKER_URL"
+  "cft_public_key": "ENTER_TURNSTILE_PUBLIC_KEY",
+  "worker_url": "ENTER_TURNSTILE_WORKER_URL",
+  "r2_auth_key": "ENTER_R2_AUTH_KEY"
 }
