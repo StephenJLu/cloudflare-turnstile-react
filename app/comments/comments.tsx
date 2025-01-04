@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Form, useActionData, useLoaderData, useNavigate } from '@remix-run/react';
 import { json } from '@remix-run/cloudflare';
+import keys from '../turnstile/keys.json';
 
 interface ActionData {
   success?: boolean;
@@ -20,21 +21,15 @@ interface LoaderData {
   comments: Comment[];
 }
 
-interface CloudflareContext {
-  cloudflare: {
-    env: {
-      AUTH_KEY_SECRET: string;
-    };
-  };
-}
+const AUTH_KEY_SECRET = keys.r2_auth_key;
 
-export const loader = async ({ context }: { context: CloudflareContext }) => {
+export const loader = async () => {
   try {
     const response = await fetch('https://r2-worker.stephenjlu.com/comments.json', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'X-Custom-Auth-Key': context.cloudflare.env.AUTH_KEY_SECRET
+        'X-Custom-Auth-Key': AUTH_KEY_SECRET
       }
     });
     
@@ -45,7 +40,7 @@ export const loader = async ({ context }: { context: CloudflareContext }) => {
   }
 };
 
-export const action = async ({ request, context }: { request: Request; context: CloudflareContext }) => {
+export const action = async ({ request }: { request: Request }) => {
   try {
     const formData = await request.formData();
     const name = formData.get('name') as string;
@@ -65,7 +60,7 @@ export const action = async ({ request, context }: { request: Request; context: 
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
-        'X-Custom-Auth-Key': context.cloudflare.env.AUTH_KEY_SECRET,
+        'X-Custom-Auth-Key': AUTH_KEY_SECRET,
       },
       body: JSON.stringify({ name, comment, timestamp: new Date().toISOString() }),
     });
