@@ -63,7 +63,7 @@ export const TurnstileTest = () => {
               borderRadius: '4px'
             }}
           >
-            Verify Turnstile to Access Comments
+            Verify Turnstile to Reveal Comments
           </button>
         </Form>
       )}
