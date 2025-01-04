@@ -1,5 +1,5 @@
 {
-  "cft_public_key": "0x4AAAAAAA30n09B49oMBU_q",
-  "worker_url": "https://turnstile.stephenjlu.com",
-  "r2_auth_key": "t3ZVTNnZdCvus58BFcaU"
+  "cft_public_key": "ENTER_TURNSTILE_PUBLIC_KEY",
+  "worker_url": "ENTER_TURNSTILE_WORKER_URL",
+  "r2_auth_key": "ENTER_R2_AUTH_KEY"
 }
